@@ -3,11 +3,11 @@
   "main": "expo-router/entry",
   "version": "1.0.0",
   "scripts": {
-    "dev": "expo start --ios",
-    "build:ios": "eas build -p ios -e development --local",
-    "lint": "expo lint",
+    "dev": "npm run ios",
     "android": "expo run:android",
-    "ios": "expo run:ios"
+    "ios": "expo run:ios",
+    "lint": "expo lint",
+    "build:prod": "eas build -p ios -e production --local"
   },
   "dependencies": {
     "@expo/vector-icons": "^14.1.0",
