@@ -7,8 +7,7 @@
     "android": "expo run:android",
     "ios": "expo run:ios",
     "lint": "expo lint",
-    "rebuild1": "expo run:ios --reset-cache",
-    "rebuild": "eas build -p ios -e production --local --clear-cache",
+    "rebuild": "npx expo prebuild --clean",
     "build:prod": "eas build -p ios -e production --local"
   },
   "dependencies": {
