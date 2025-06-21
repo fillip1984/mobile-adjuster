@@ -12,7 +12,8 @@ export default function RootLayout() {
         }}>
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
         <Stack.Screen name="+not-found" />
-        <Stack.Screen name="modal" options={{ presentation: "modal" }} />
+        <Stack.Screen name="claimModal" options={{ presentation: "modal" }} />
+        <Stack.Screen name="cameraModal" options={{ presentation: "modal" }} />
       </Stack>
       <StatusBar style="auto" />
     </>

@@ -65,7 +65,7 @@ export default function HomeScreen() {
             if (clickedClaim) {
               console.log("Clicked claim:", clickedClaim);
               router.push({
-                pathname: "/modal",
+                pathname: "/claimModal",
                 params: { claimNumber: clickedClaim.title },
               });
             }

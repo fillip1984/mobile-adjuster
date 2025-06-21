@@ -1,9 +1,10 @@
 import FontAwesome6 from "@expo/vector-icons/FontAwesome6";
 import MaterialIcons from "@expo/vector-icons/MaterialIcons";
-import { useLocalSearchParams } from "expo-router";
+import { useLocalSearchParams, useRouter } from "expo-router";
 import { Image, Pressable, Text, View } from "react-native";
 
-export default function Modal() {
+export default function ClaimModal() {
+  const router = useRouter();
   const params = useLocalSearchParams();
   const { claimNumber } = params;
 
@@ -106,7 +107,9 @@ export default function Modal() {
             <Pressable
               className="bg-blue-500 p-2 rounded-lg flex items-center justify-center"
               onPress={() => {
-                // Handle action here
+                router.push("/cameraModal", {
+                  // claimNumber: claim.claimNumber,
+                });
               }}>
               <FontAwesome6 name="camera-retro" size={24} color="white" />
               <Text className="text-white text-sm">Add Photo</Text>
